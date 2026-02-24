@@ -20,7 +20,7 @@ This project simulates a backend firewall that analyzes incoming network packets
  2. Thread-Safe Ring Buffer
 To facilitate lock-free-like data transfer between the producer and consumers, a custom Circular Buffer (`ring_buffer.c`) was engineered:
  Atomic State: Used `pthread_mutex_t` to protect read/write pointers and buffer length.
- Smart Sleep/Wake: Utilized `pthread_cond_t` (`gol` / `plin`) to gracefully suspend threads when the buffer is empty or full, preventing CPU-heavy spin-locking.
+ Smart Sleep/Wake: Utilized `pthread_cond_t` (`empty` / `full`) to gracefully suspend threads when the buffer is empty or full, preventing CPU-heavy spin-locking.
 
  3. Critical Section Optimization
 A major focus was placed on multi-core performance in `consumer.c`. Heavy operations like `packet_hash()` and `process_packet()` are executed outside the critical section (in parallel). The mutex (`log_mutex`) is strictly locked for a fraction of a millisecond only during the `fprintf` system call, ensuring thread-safe atomic writes to the output log without creating a concurrency bottleneck.
@@ -38,5 +38,5 @@ This project was developed upon a university-provided Operating Systems skeleton
  💻 Compilation & Execution
 
  Build
-```bash
+`bash
 make ./firewall <input-file> <output-file> <num-consumers:1-32>
