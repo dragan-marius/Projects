@@ -86,7 +86,7 @@ values.
 ## How to Run
 
 javac -d bin src/**/*.java
-java -cp bin Main
+java -cp bin main.java.grid.controller.Main
 
 ## Example Simulation Behavior
 
