@@ -1,5 +1,4 @@
-Data Center Infrastructure Management API
-Dragan Marius
+# Data Center Infrastructure Management API
 **Source Code Availability**
     The actual source code for this project is maintained in a private
 repository. However, I am more than happy to grant repository access upon
