@@ -4,11 +4,11 @@ Overview
 
     MarsGrid is a simulation system designed to manage the energy network of
 an autonomous colony on Mars. The application models energy producers,
-consumers, and storage units, and simulates how energy is balanced
+consumers and storage units, and simulates how energy is balanced
 across the network during discrete time steps (ticks).
 
 The system is implemented using Object-Oriented Programming principles,
-including abstraction, inheritance, encapsulation, and polymorphism.
+including abstraction, inheritance, encapsulation and polymorphism.
 
 
     Architecture
