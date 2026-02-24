@@ -1,5 +1,9 @@
 Data Center Infrastructure Management API
-Dragan Marius 
+Dragan Marius
+** Source Code Availability**
+    The actual source code for this project is maintained in a private
+repository. However, I am more than happy to grant repository access upon
+request or present the codebase via screen share during an interview
 Project Overview
     This project is a Java-based backend system designed to simulate an IT infrastructure monitoring and alert
 management platform. It processes dynamic system data to manage servers, resource groups and automated alerts
