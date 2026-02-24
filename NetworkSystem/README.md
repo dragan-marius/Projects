@@ -85,8 +85,8 @@ values.
 
 ## How to Run
 
-javac -d bin src/**/*.java
-java -cp bin main.java.grid.controller.Main
+javac -d out $(find src -name "*.java")
+java -cp out main.java.grid.controller.Main
 
 ## Example Simulation Behavior
 
