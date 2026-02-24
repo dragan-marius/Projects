@@ -1,5 +1,10 @@
  🛡️ Parallel Firewall (Multi-threaded Packet Filter)
 
+**Source Code Availability**
+    The actual source code for this project is maintained in a private
+repository. However, I am more than happy to grant repository access upon
+request or present the codebase via screen share during an interview.
+
 A high-performance, concurrent network packet filtering system implemented in C, utilizing the Producer-Consumer architecture and POSIX Threads.
 
  🚀 Overview

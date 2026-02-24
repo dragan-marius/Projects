@@ -1,11 +1,16 @@
 # Satellite Network Router (Huffman Topology Builder)
 
-Overview
+**Source Code Availability**
+    The actual source code for this project is maintained in a private
+repository. However, I am more than happy to grant repository access upon
+request or present the codebase via screen share during an interview.
+
+## Overview
 This project is a C-based application designed to simulate, build and optimize a hierarchical satellite network topology. It utilizes a custom-built Min-Heap and Binary Tree data structures to dynamically link nodes based on their communication frequency, closely following the logic of the Huffman Coding algorithm. 
 
 Nodes with higher reporting frequencies are placed closer to the root (Earth), ensuring faster communication, while lower-frequency nodes are pushed further down the hierarchy.
 
-Core Features & Algorithms
+## Core Features & Algorithms
 * Min-Heap Implementation: A fully custom Min-Heap used as a priority queue to efficiently extract the two satellites with the lowest reporting frequencies.
 * Level-Order Traversal (BFS): Implemented using a custom Queue structure to display the resulting network layer by layer.
 * Path Encoding & Decoding (DFS): * Parses binary sequences (`0` for left, `1` for right) to determine the exact satellite being communicated with.
@@ -13,13 +18,13 @@ Core Features & Algorithms
 * Lowest Common Ancestor (LCA): A recursive search algorithm that identifies the lowest shared parent node for a given set of malfunctioning satellites.
 * Memory Management: Strictly ensures no memory leaks by recursively destroying trees, queues and heaps (verified via Valgrind).
 
-Technologies
+## Technologies
 * Language: C
 * Concepts: Data Structures (Trees, Heaps, Queues), Algorithms (BFS, DFS, Huffman), Pointers, Dynamic Memory Allocation.
 
 How to Build and Run
 
-#Compilation
+## Compilation
 A `Makefile` is provided for easy compilation.
 ```bash
 make build

@@ -1,5 +1,10 @@
 # MarsGrid Energy Network Simulator
 
+**Source Code Availability**
+    The actual source code for this project is maintained in a private
+repository. However, I am more than happy to grant repository access upon
+request or present the codebase via screen share during an interview.
+
 ## Overview
 
 MarsGrid is a simulation system designed to manage the energy network of
